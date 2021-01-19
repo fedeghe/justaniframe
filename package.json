@@ -1,0 +1,15 @@
+{
+  "name": "justaniframe",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fedeghe/justaniframe.git",
+  "author": "fedeghe <fedeghe@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "malta": "^4.1.28"
+  },
+  "scripts": {
+      "build": "malta source/build.json"
+  }
+}
