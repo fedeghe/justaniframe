@@ -1,34 +1,44 @@
 var t  = [
     {
-        win: W1,
-        out: ['aaa', 'bbb'],
-        in: ['eee', 'rrr', 'ttt']
+        win: W,
+        out: [{ toward: A, actions: ['reset']}],// set an emitter
+        in: [{ from: A, actions: ['done']}]   // set a listener
     },
     {
-        win: W2,
-        out: ['eee', 'rrr'],
-        in: ['aaa', 'bbb']
+        win: A,
+        out: [{ toward: W, actions: ['done']}],// set an emitter
+        in: [{ from: W, actions: ['reset']}] // set a listener
     }
 ]
 
 
+// W.addEventListener('message', function (e) {
+//     if (e.data.action === 'done') 
+// })
 
 
 
 window.MsgHub = window.MsgHub || (function (){
+
     function setListener(win, action, cb) {
         win.addEventListener('message', function (e) {
             e.data && e.data.action && e.data.action === action && cb()
         })
     }
-    function setMessager(win, action, cb) {
-
-        
+    function setEmitter(win, action, cb) {
+        win[action] = function (data) {}
     }
     function setup(config) {
-        for (var i  = 0, l = config.length; i < l; i++) {
+        for (var i  = 0, l = config.length; i < l; i++) (function (entry) {
+            var win  = entry.win,
+                j, k;
+            for (j = 0, k = entry.out.length; j < k; j++) {
+                
+            }
+            for (j = 0, k = entry.in.length; j < k; j++) {
 
-        }
+            }
+        })(config[i])
     }
     return {
         setup: setup
