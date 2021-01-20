@@ -7,10 +7,12 @@
   "license": "MIT",
   "devDependencies": {
     "malta": "^4.1.28",
+    "malta-dev-srv": "^1.1.7",
     "malta-header-comment": "^1.0.12",
     "malta-js-uglify": "^1.0.13"
   },
   "scripts": {
-    "build": "malta source/build.json"
+    "build": "malta source/build.json",
+    "start": "malta source/sample/build.json"
   }
 }

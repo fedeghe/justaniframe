@@ -1,0 +1,9 @@
+{
+    "EXE": [
+        "rm -rf sample",
+        "mkdir -p sample/dist"
+    ],
+    "source/sample/index.js": "sample -plugins=malta-js-uglify...malta-header-comment[name:\"source/header.txt\"]",
+    "source/sample/index.html": "sample -plugins=malta-dev-srv[folder:\"sample\"]",
+    "source/index.js": "sample/dist -plugins=malta-js-uglify...malta-header-comment[name:\"source/header.txt\"]"
+}

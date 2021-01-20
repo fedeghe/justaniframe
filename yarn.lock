@@ -60,6 +60,11 @@ longest@^1.0.1:
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
   integrity sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
 
+malta-dev-srv@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/malta-dev-srv/-/malta-dev-srv-1.1.7.tgz#eb2220cc0813acb7454df09646853f5556ef5e22"
+  integrity sha512-piqBphgHdIzndyBP1H45GeGlRMhx5T4v7chGjF+UgtWU+e1qYDm5SBX9osBWnsPTLYc8lSOe1b2ljJmpgrYuWw==
+
 malta-header-comment@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/malta-header-comment/-/malta-header-comment-1.0.12.tgz#6c64a6d46ddb35d6961257e6ca0ca50e404fd957"
