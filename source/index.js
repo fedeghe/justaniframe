@@ -3,7 +3,7 @@ var justaniframe = (function () {
 
 
 
-    function generateEncodedContent(scriptSrc) {
+    function generateEncodedContent(scriptSrc) { 
         return "data:text/html;charset=utf-8," + encodeURI('<!DOCTYPE html>' +
             '<html>' +
                 '<head>' +
